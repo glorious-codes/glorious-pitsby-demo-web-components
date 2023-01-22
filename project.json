@@ -1,0 +1,8 @@
+{
+  "source": {
+    "root": "src",
+    "tests": {
+      "files": ["src/**/*.js"]
+    }
+  }
+}

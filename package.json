@@ -1,0 +1,21 @@
+{
+  "name": "glorious-pitsby-demo-web-components",
+  "version": "0.1.0",
+  "description": "A simple demo of web components documented with Pitsby",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "NODE_NO_WARNINGS=1 NODE_OPTIONS=--experimental-vm-modules npx jest"
+  },
+  "keywords": [
+    "web",
+    "components",
+    "pitsby"
+  ],
+  "author": "Rafael Camargo <hello@rafaelcamargo.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.3.1"
+  }
+}
