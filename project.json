@@ -2,7 +2,7 @@
   "source": {
     "root": "src",
     "tests": {
-      "files": ["src/**/*.js"]
+      "files": ["src/**/*.js", "!src/doc.importmap.js"]
     }
   }
 }

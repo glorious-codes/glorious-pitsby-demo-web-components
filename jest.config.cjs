@@ -1,6 +1,6 @@
-import project from './project.json' assert { type: "json" };
+const project = require('./project.json');
 
-export default {
+module.exports = {
   collectCoverageFrom: project.source.tests.files,
   coverageReporters: ['html', 'text-summary'],
   coverageThreshold: {
@@ -17,5 +17,8 @@ export default {
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: [
     '<rootDir>/jest.setup.js'
-  ]
+  ],
+  transform: {
+    '^.+\\.js$': 'babel-jest'
+  }
 };
