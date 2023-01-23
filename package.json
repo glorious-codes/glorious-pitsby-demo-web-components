@@ -5,8 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "docs": "pitsby build",
     "format": "eslint ./src/**/*.js",
-    "start": "pitsby build --watch",
+    "start": "npm run docs -- --watch",
     "test": "jest"
   },
   "keywords": [

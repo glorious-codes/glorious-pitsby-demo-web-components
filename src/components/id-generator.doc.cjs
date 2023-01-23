@@ -1,9 +1,9 @@
 module.exports = {
-  name: 'Id Generator',
+  name: 'ID Generator',
+  description: 'Generates a non-sequential url-friendly unique id.',
   examples: [
     {
-      title: 'Default Id Generator',
-      description: 'Generates a non-sequential url-friendly unique id.',
+      title: 'Default ID Generator',
       template: '<id-generator />'
     }
   ]
