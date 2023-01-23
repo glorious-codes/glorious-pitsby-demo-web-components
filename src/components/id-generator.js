@@ -14,4 +14,4 @@ export class IdGenerator extends HTMLElement {
   generateId(){
     this.querySelector('input').value = uuid();
   }
-};
+}

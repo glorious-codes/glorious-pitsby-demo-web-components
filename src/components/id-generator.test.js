@@ -6,7 +6,7 @@ describe('ID Generator', () => {
   }
 
   it('should generate an UUID', async () => {
-    const { element, user } = mount();
+    const { user } = mount();
     const input = screen.getByLabelText(/generated id/i);
     expect(input.value).toHaveLength(0);
     user.click(screen.getByText(/generate/i));

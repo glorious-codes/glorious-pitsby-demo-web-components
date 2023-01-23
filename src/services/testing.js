@@ -1,4 +1,4 @@
-import userEvent from '@testing-library/user-event'
+import userEvent from '@testing-library/user-event';
 export * from '@testing-library/dom';
 
 export function render(html){
