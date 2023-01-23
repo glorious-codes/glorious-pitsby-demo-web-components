@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "format": "eslint ./src/**/*.js",
-    "test": "jest",
-    "docs": "pitsby build --watch"
+    "start": "pitsby build --watch",
+    "test": "jest"
   },
   "keywords": [
     "web",
