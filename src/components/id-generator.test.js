@@ -1,4 +1,4 @@
-import { render, screen, waitFor } from '@src/services/testing';
+import { render, screen, pause } from '@src/services/testing';
 
 describe('ID Generator', () => {
   function mount(){
@@ -7,11 +7,11 @@ describe('ID Generator', () => {
 
   it('should generate an UUID', async () => {
     const { user } = mount();
-    const input = screen.getByLabelText(/generated id/i);
+    const input = await screen.findByShadowLabelText(/generated id/i);
+    const button = await screen.getByShadowText(/generate/i);
     expect(input.value).toHaveLength(0);
-    user.click(screen.getByText(/generate/i));
-    await waitFor(() => {
-      expect(input.value).toHaveLength(36);
-    });
+    user.click(button);
+    await pause(50);
+    expect(input.value).toHaveLength(36);
   });
 });

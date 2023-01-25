@@ -1,9 +1,6 @@
 module.exports = {
   projects: [
-    {
-      engine: 'vanilla',
-      collectDocsFrom: './src',
-    }
+    { engine: 'vanilla', collectDocsFrom: './src' }
   ],
   scripts: [
     { src: './src/doc.importmap.js', type: 'importmap', inline: true },
@@ -11,7 +8,12 @@ module.exports = {
   ],
   other: [
     './src/components/id-generator.js',
-    './node_modules/uuid/dist/esm-browser/'
+    './node_modules/uuid/dist/esm-browser/v4.js',
+    './node_modules/uuid/dist/esm-browser/native.js',
+    './node_modules/uuid/dist/esm-browser/rng.js',
+    './node_modules/uuid/dist/esm-browser/stringify.js',
+    './node_modules/uuid/dist/esm-browser/validate.js',
+    './node_modules/uuid/dist/esm-browser/regex.js'
   ],
   outputDirectory: './docs'
 }

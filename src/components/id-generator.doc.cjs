@@ -4,7 +4,7 @@ module.exports = {
   examples: [
     {
       title: 'Default ID Generator',
-      template: '<id-generator />'
+      template: '<id-generator></id-generator>'
     }
   ]
 }

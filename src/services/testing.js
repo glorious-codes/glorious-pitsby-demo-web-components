@@ -1,5 +1,9 @@
 import userEvent from '@testing-library/user-event';
-export * from '@testing-library/dom';
+export * from 'shadow-dom-testing-library';
+
+export async function pause(timeout){
+  await new Promise(resolve => setTimeout(resolve, timeout));
+}
 
 export function render(html){
   document.body.innerHTML = html;

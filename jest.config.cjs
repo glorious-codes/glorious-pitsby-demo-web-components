@@ -12,7 +12,8 @@ module.exports = {
     }
   },
   moduleNameMapper: {
-    '@src\/(.*)$': `<rootDir>/${project.source.root}/$1`
+    '@src\/(.*)$': `<rootDir>/${project.source.root}/$1`,
+    '^uuid$': `<rootDir>/node_modules/uuid/dist/commonjs-browser/v4.js`
   },
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: [
