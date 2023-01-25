@@ -1,4 +1,4 @@
-import { render, screen, pause } from '@src/services/testing';
+import { render, screen, pause } from '../services/testing';
 
 describe('ID Generator', () => {
   function mount(){
