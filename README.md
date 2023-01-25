@@ -1,6 +1,9 @@
 # Glorious Pitsby Demo (Web Components)
 > Demo documentation generated with https://pitsby.com
 
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/glorious-codes/glorious-pitsby-demo-web-components/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/glorious-codes/glorious-pitsby-demo-web-components/tree/main)
+[![Coverage Status](https://coveralls.io/repos/github/glorious-codes/glorious-pitsby-demo-web-components/badge.svg?branch=main)](https://coveralls.io/github/glorious-codes/glorious-pitsby-demo-web-components?branch=main)
+
 ## Contributing
 
 1. Install [Node](https://nodejs.org/en/). Download the "Recommend for Most Users" version.
