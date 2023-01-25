@@ -5,7 +5,7 @@ orbs:
 
 defaults: &defaults
   docker:
-    - image: cimg/node:19.4.0-browsers
+    - image: cimg/node:19.4.0
   working_directory: ~/app
 
 jobs:
@@ -32,7 +32,8 @@ jobs:
             - "package.json"
             - "package-lock.json"
             - "project.json"
-            - "jest.*.js"
+            - "jest.setup.js"
+            - "jest.config.cjs"
             - "pitsby.config.cjs"
             - ".babelrc"
             - ".eslintrc"

@@ -12,9 +12,10 @@ module.exports = {
     }
   },
   moduleNameMapper: {
+    '@src\/(.*)$': `<rootDir>/${project.source.root}/$1`,
     '^uuid$': `<rootDir>/node_modules/uuid/dist/v4.js`
   },
-  testEnvironment: '@happy-dom/jest-environment',
+  testEnvironment: 'jest-environment-jsdom',
   setupFilesAfterEnv: [
     '<rootDir>/jest.setup.js'
   ],
