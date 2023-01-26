@@ -8,7 +8,8 @@
     "docs": "pitsby build",
     "format": "eslint ./src/**/*.js",
     "start": "npm run docs -- --watch",
-    "test": "jest"
+    "test": "jest",
+    "deploy": "firebase deploy --non-interactive"
   },
   "keywords": [
     "web",
@@ -24,6 +25,7 @@
     "@testing-library/user-event": "^14.4.3",
     "babel-jest": "^29.4.0",
     "eslint": "^8.32.0",
+    "firebase-tools": "^11.21.0",
     "jest": "^29.4.0",
     "jest-environment-jsdom": "^29.4.0",
     "shadow-dom-testing-library": "^1.10.0"
