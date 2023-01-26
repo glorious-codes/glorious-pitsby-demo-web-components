@@ -7,6 +7,7 @@ module.exports = {
     { src: './src/index.js', type: 'module' }
   ],
   other: [
+    './src/images/logo-web-components.svg',
     './src/components/id-generator.js',
     './node_modules/uuid/dist/esm-browser/v4.js',
     './node_modules/uuid/dist/esm-browser/native.js',
@@ -15,5 +16,13 @@ module.exports = {
     './node_modules/uuid/dist/esm-browser/validate.js',
     './node_modules/uuid/dist/esm-browser/regex.js'
   ],
+  custom: {
+    logo: {
+      filepath: './src/images/logo-web-components.svg',
+      width: '250px',
+      height: '40px'
+    },
+    windowTitle: 'Pitsby: Web Components + ES Modules',
+  },
   outputDirectory: './docs'
 }
