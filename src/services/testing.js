@@ -14,5 +14,6 @@ export function render(html){
 }
 
 export function teardown(){
-  document.body.firstChild.remove();
+  const { firstChild } = document.body;
+  firstChild && firstChild.remove();
 }

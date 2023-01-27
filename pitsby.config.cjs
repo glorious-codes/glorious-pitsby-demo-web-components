@@ -4,11 +4,14 @@ module.exports = {
   ],
   scripts: [
     { src: './src/doc.importmap.js', type: 'importmap', inline: true },
+    { src: './src/browser-support.js', type: 'module' },
     { src: './src/index.js', type: 'module' }
   ],
   other: [
     './src/images/logo-web-components.svg',
     './src/components/id-generator.js',
+    './src/services/browser.js',
+    './src/services/window.js',
     './node_modules/uuid/dist/esm-browser/v4.js',
     './node_modules/uuid/dist/esm-browser/native.js',
     './node_modules/uuid/dist/esm-browser/rng.js',
