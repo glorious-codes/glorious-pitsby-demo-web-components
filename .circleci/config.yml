@@ -62,7 +62,7 @@ jobs:
           at: ~/app
       - run:
           name: Docs
-          command: npm run docs
+          command: NODE_ENV=production npm run docs
       - persist_to_workspace:
           root: "."
           paths:
